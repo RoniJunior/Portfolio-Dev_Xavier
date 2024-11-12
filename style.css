@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-link {
+    color: white;
+    text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .hero h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    color: #ccc;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding: 2rem;
+    background-color: #111;
+  }
+
+  .projects h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .projects-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .project-item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #080808;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação para interação */
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a div quando o mouse passa sobre ela */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  }
+
+  .project-image {
+    width: 100%; /* Ajusta a largura para 100% do contêiner */
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    border-radius: 8px; /* Borda arredondada */
+  }
+
+  .project-item h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-item p {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+
+    /* Centraliza a div no meio da tela */
+    .centered-container {
+      display: flex;                /* Ativa o flexbox */
+      flex-direction: column;       /* Organiza os itens na direção da coluna */
+      justify-content: center;      /* Alinha os itens verticalmente no centro */
+      align-items: center;          /* Alinha os itens horizontalmente no centro */
+      height: 2.5vh;                /* Define a altura da div para a altura total da tela */
+      text-align: center;           /* Alinha o texto dentro da div ao centro */
+    }
+  
+    /* Estilo da div que contém as imagens */
+    .tech-icons {
+      display: flex;               /* Ativa o flexbox dentro da div */
+      justify-content: center;      /* Centraliza as imagens dentro da div */
+      gap: 50px;                    /* Adiciona espaço entre as imagens */
+      margin-bottom: 5px;          /* Adiciona espaçamento abaixo das imagens */
+    }
+  
+      .icons-center {
+      display: flex;                /* Ativa o flexbox */
+      justify-content: center;      /* Alinha os itens verticalmente no centro */
+      align-items: center;          /* Alinha os itens horizontalmente no centro */
+      height: 10vh;                /* Define a altura da div para a altura total da tela */
+      text-align: center;           /* Alinha o texto dentro da div ao centro */
+      }
+
+      .icons-center img {
+        margin: 5px; /* Adiciona um espaçamento entre as imagens */
+      }
+
+      .redeSocial{
+        display: flex;                /* Ativa o flexbox */
+      justify-content: center;      /* Alinha os itens verticalmente no centro */
+      align-items: center;          /* Alinha os itens horizontalmente no centro */
+      height: 10vh;                /* Define a altura da div para a altura total da tela */
+      text-align: center;           /* Alinha o texto dentro da div ao centro */
+      }
+
+      .redeSocial img {
+        margin: 5px; /* Adiciona um espaçamento entre as imagens */
+      }
+    
+
+/* Estilo da seção de contato */
+  .contact {
+    text-align: center;
+    margin-top: 2rem;
+  }
+   /* Estilo do botão */
+    .whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #25D366; /* Verde do WhatsApp */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1ebe57;
+  }
+
+   /* Estilo da seção de contato */
+    .contact_email {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  /* Remove sublinhado de links em .whatsapp-button */
+.contact .whatsapp-button {
+  text-decoration: none !important;
+}
+
+
+  /* Estilo do botão de e-mail */
+  .email-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF; /* Azul */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .email-button:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 1rem;
+  }
