@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #040504, #01f015);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Foto e Cargo  */
+
+.foto {
+  font-family: "Montserrat", sans-serif;
+  display: flex; /* Layout flexível */
+  gap: 2%; /* Espaçamento entre os blocos */
+  max-width: 190%; /* Largura máxima da seção */
+  padding: 1%; /* Adiciona espaçamento interno */
+}
+
+.profile {
+  background: linear-gradient(90deg, #040504, #01f015);
+  padding: 6%;
+  border-radius: 1%;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 900px; /* Torna a imagem redonda */
+  border: 3px solid #4caf50; /* Adiciona uma borda ao redor da imagem */
+}
+
+h2 {
+  margin-top: 1%;
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+/* texto Dinâmico */
+.dynamic-text-container {
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex; /* Garante alinhamento horizontal */
+  align-items: center; /* Garante alinhamento vertical */
+}
+
+.dynamic-text {
+  color: #2bff00;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.3em solid white; /* Corrigido para unidade válida */
+  animation: blink 0.7s steps(2, start) infinite;
+  line-height: 1; /* Garante alinhamento com o texto fixo */
+  vertical-align: baseline; /* Alinha o texto dinâmico com o texto fixo */
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+  .dynamic-text-container {
+    font-size: 2.5rem; /* Reduz o tamanho do texto */
+  }
+}
+
+@media (max-width: 992px) {
+  .dynamic-text-container {
+    font-size: 2rem; /* Reduz o tamanho do texto */
+  }
+}
+
+@media (max-width: 768px) {
+  .dynamic-text-container {
+    font-size: 1.5rem; /* Reduz o tamanho do texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-text-container {
+    font-size: 1.2rem; /* Reduz ainda mais o tamanho do texto */
+  }
+}
+
+/* Estilo da seção "Sobre" */
+.Sobre {
+  flex: 2; /* O texto ocupa mais espaço */
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Títulos e parágrafos */
+.Sobre h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.Sobre p {
+  line-height: 2.6; /* Espaçamento entre linhas */
+  text-align: justify; /* Justifica o texto */
+}
+
+/* Sobre mim até aqui */
+
+/* Currículo */
+.curriculo {
+  font-family: Montserrat, sans-serif;
+  display: inline-block;
+  padding: 0.3% 0.4%;
+  color: #fff;
+  background-color: #0c8839; /* Verde do WhatsApp */
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1, 4%;
+  font-weight: 350;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.curriculo:hover {
+  background-color: #1ebe57;
+}
+
+/* currículo é aqui */
+
+.project-link {
+  color: white;
+  text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero h2 {
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem;
+  background: linear-gradient(90deg, #040504, #01f015);
+}
+
+.projects h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.projects-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item {
+  padding: 1rem;
+  border: 1% solid #ddd;
+  border-radius: 1%;
+  background: #080808;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação para interação */
+}
+
+.project-item:hover {
+  transform: scale(
+    1.05
+  ); /* Aumenta ligeiramente a div quando o mouse passa sobre ela */
+  box-shadow: 0 0, 4% 1, 2% rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.project-image {
+  width: 100%; /* Ajusta a largura para 100% do contêiner */
+  max-width: 100%; /* Define um tamanho máximo para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 2%; /* Espaço entre a imagem e o texto */
+  border-radius: 3%; /* Borda arredondada */
+}
+
+.project-item h4 {
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Centraliza a div no meio da tela */
+.centered-container {
+  display: flex; /* Ativa o flexbox */
+  flex-direction: column; /* Organiza os itens na direção da coluna */
+  justify-content: center; /* Alinha os itens verticalmente no centro */
+  align-items: center; /* Alinha os itens horizontalmente no centro */
+  height: 2.5vh; /* Define a altura da div para a altura total da tela */
+  text-align: center; /* Alinha o texto dentro da div ao centro */
+}
+
+/* Estilo da div que contém as imagens */
+.tech-icons {
+  display: flex; /* Ativa o flexbox dentro da div */
+  justify-content: center; /* Centraliza as imagens dentro da div */
+  gap: 5px; /* Adiciona espaço entre as imagens */
+  margin-bottom: 0, 5%; /* Adiciona espaçamento abaixo das imagens */
+}
+
+.icons-center {
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Alinha os itens verticalmente no centro */
+  align-items: center; /* Alinha os itens horizontalmente no centro */
+  height: 10vh; /* Define a altura da div para a altura total da tela */
+  text-align: center; /* Alinha o texto dentro da div ao centro */
+}
+
+.icons-center img {
+  margin: 0, 5%; /* Adiciona um espaçamento entre as imagens */
+}
+
+.redeSocial {
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Alinha os itens verticalmente no centro */
+  align-items: center; /* Alinha os itens horizontalmente no centro */
+  height: 10vh; /* Define a altura da div para a altura total da tela */
+  text-align: center; /* Alinha o texto dentro da div ao centro */
+}
+
+.redeSocial img {
+  margin: 10px; /* Adiciona um espaçamento entre as imagens */
+}
+
+/* Estilo da seção de contato */
+.contact {
+  text-align: center;
+  margin-top: 2rem;
+}
+/* Estilo do botão */
+.whatsapp-button {
+  display: inline-block;
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #0c8839; /* Verde do WhatsApp */
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1, 6%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+}
+
+/* Estilo da seção de contato */
+.contact_email {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Remove sublinhado de links em .whatsapp-button */
+.contact .whatsapp-button {
+  text-decoration: none !important;
+}
+
+/* Estilo do botão de e-mail */
+.email-button {
+  display: inline-block;
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #007bff; /* Azul */
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1, 6%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000000;
+  color: #fff;
+  margin-top: 1rem;
+}
