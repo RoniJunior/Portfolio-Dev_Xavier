@@ -29,7 +29,7 @@ header h1 {
   font-family: "Montserrat", sans-serif;
   display: flex; /* Layout flexível */
   gap: 2%; /* Espaçamento entre os blocos */
-  max-width: 190%; /* Largura máxima da seção */
+  max-width: 120%; /* Largura máxima da seção */
   padding: 1%; /* Adiciona espaçamento interno */
 }
 
@@ -40,10 +40,11 @@ header h1 {
 }
 
 .profile-pic {
-  width: 180px;
-  height: 190px;
+  width: 240px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 900px; /* Torna a imagem redonda */
+  object-position: center top;
+  border-radius: 9000px; /* Torna a imagem redonda */
   border: 3px solid #4caf50; /* Adiciona uma borda ao redor da imagem */
 }
 
