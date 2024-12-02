@@ -58,7 +58,11 @@ Após clonar o projeto, instale as dependências:
 - Javascript
 - NodeJS
 - Python
+- PostgreSQL
+- SQL Server
+- MySQL
 - Google Fonts
+- Canva
 - Figma
 
 ## Links 🔗 
