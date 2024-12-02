@@ -24,22 +24,20 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Foto e Cargo */
+/* Foto e Cargo  */
+
 .foto {
   font-family: "Montserrat", sans-serif;
   display: flex; /* Layout flexível */
   gap: 2%; /* Espaçamento entre os blocos */
-  max-width: 100%; /* Ajuste para a largura máxima */
+  max-width: 120%; /* Largura máxima da seção */
   padding: 1%; /* Adiciona espaçamento interno */
-  flex-wrap: wrap; /* Permite quebra de linha se necessário */
 }
 
 .profile {
   background: linear-gradient(90deg, #040504, #01f015);
   padding: 6%;
   border-radius: 1%;
-  flex: 1;
-  text-align: center;
 }
 
 .profile-pic {
@@ -47,7 +45,7 @@ header h1 {
   height: 190px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 50%; /* Torna a imagem redonda */
+  border-radius: 9000px; /* Torna a imagem redonda */
   border: 3px solid #4caf50; /* Adiciona uma borda ao redor da imagem */
 }
 
@@ -131,13 +129,13 @@ p {
 .curriculo {
   font-family: Montserrat, sans-serif;
   display: inline-block;
-  padding: 0.3% 0.4%;
+  padding: 0.8% 3.5%;
   color: #fff;
   background-color: #0c8839;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   text-decoration: none;
-  font-size: 1.4%;
+  font-size: 1rem;
   font-weight: 350;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -254,7 +252,7 @@ nav a {
 
 .icons-center img {
   margin: 0.5%;
-  width: 40px; /* Ajusta o tamanho das imagens */
+  width: 50px; /* Ajusta o tamanho das imagens */
 }
 
 /* Redes sociais */
@@ -268,7 +266,7 @@ nav a {
 
 .redeSocial img {
   margin: 10px;
-  width: 40px;
+  width: 70px;
 }
 
 /* Estilo da seção de contato */
@@ -285,7 +283,7 @@ nav a {
   border: none;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 1.6%;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -313,7 +311,7 @@ nav a {
   border: none;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 1.6%;
+  font-size: 0.8rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
