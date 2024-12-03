@@ -1,11 +1,3 @@
-
-![Port01](https://github.com/user-attachments/assets/afdc2884-1480-49ef-a25a-f9ffc6b1fb2f)
-
-![Port02](https://github.com/user-attachments/assets/dc8d8e8b-3c4a-49c0-b11d-a7d35410aa9a)
-
-![Port03](https://github.com/user-attachments/assets/2cea0c8d-0962-4084-b939-3eb62d14a99e)
-
-
 # Meu Portfolio 
 
 
