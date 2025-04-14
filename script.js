@@ -1,9 +1,9 @@
 const words = [
   "_Back-End",
-  "_JavaScript",
-  "_Node.JS",
-  "_TypeScript",
-  "_PostgreSQL",
+  "_Automation",
+  "_N8N",
+  "_Python",
+  "_AI Specialist",
 ];
 let index = 0;
 let charIndex = 0;

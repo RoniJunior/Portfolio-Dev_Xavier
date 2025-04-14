@@ -15,15 +15,16 @@
         <img src="img//UserFoto2.JPG" alt="Foto do Perfil" class="profile-pic">
         <h2>Roni Júnior</h2>
         <div class="dynamic-text-container">
-          Developer Software: <span class=" dynamic-text"></span>       
+          Software Engineer: <span class=" dynamic-text"></span>       
       </div>
       <div>
         <h2>Sobre Mim</h2>
-          <p>Sou apaixonado por tecnologia e desenvolvimento de software. Trabalho com Back-End, focando em soluções eficientes utilizando Node.JS com Express.JS com algumas junções com TypeScript.
-            Em bancos de dados tenho experiência em SQL Server e PostgreSQL.
+          <p>Sou apaixonado por tecnologia e desenvolvimento de software. Trabalho com Back-End e integrações com Inteligência Artificial, focando em soluções eficientes utilizando JavaScript/Node.JS, Python com FastAPi/Django e Automações com N8N.
+            <br> Em bancos de dados tenho experiência em SQL Server, MySQL e atualmente estou usando o PostgreSQL.
           </p> 
-          <p>Atuo no tratamento de páginas Front-End com HTML5 e CSS3, realizando ajustes para páginas interativas com JavaScript e TypeScript.</p>
-          <p>Todos os dias, atualizo meu portfólio e GitHub com projetos nos quais tenho trabalhado ou que estou estudando no momento.</p>   
+          <br>
+          <p>Atuo no tratamento de páginas Front-End com HTML5, CSS3, TailwindCSS e React realizando ajustes para páginas interativas com JavaScript.</p>
+          <p>Atualizo meu portfólio e GitHub com projetos nos quais tenho trabalhado ou que estou estudando no momento.</p>   
             </div>
         </p>
       <br>
@@ -41,12 +42,12 @@
   <!-- Hero Section -->
   <section class="hero">
     <h2>Bem-Vindo ao Meu Portfólio</h2>
-    <p>Explore minha coleção de projetos em JavaScript, HTML e CSS e veja no que tenho trabalhado!</p>
+    <p>Explore minha coleção de projetos em JavaScript, HTML5, CSS3, TailWindCSS, N8N e veja no que tenho trabalhado!</p>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects">
-    <h3>Projetos Com HTML e CSS</h3>
+    <h3>Projetos Com HTML, CSS e TailWindCSS</h3>
     <div class="projects-gallery">
       <div class="project-item" id="proejct1">
         <h4>Projeto 1: Landing Page Coca-Cola</h4>
@@ -114,6 +115,88 @@
       </div>
       <!-- Add more projects as needed -->
     </div>
+        </section>
+        <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h3>Projetos Com N8N / AI / PostgreSQL </h3>
+    <div class="projects-gallery">
+      <div class="project-item" id="proejct1">
+        <h4>Projeto 8: 🚀 Automação Inteligente com n8n + PostgreSQL</h4>
+        <p>🚀 Automação Inteligente com n8n + PostgreSQL!<br>
+          Acabei de implementar um fluxo no n8n totalmente integrado ao PostgreSQL, focado em gerenciar mensagens de clientes de forma escalável, confiável e automatizada.
+          <br>
+          🧠 O que ele faz?<br>
+          Todos os dias, o fluxo processa uma lista de client_id, verifica o last_message_time e decide se deve inserir uma nova linha ou atualizar com novas mensagens reais extraídas de raw_messages — tudo com base em um intervalo de 24h.
+          <br>
+          🛠️ Tecnologia aplicada – 11 nós bem afinados:<br>
+          ▫️ Schedule: Roda diariamente às 00:00 (fuso America/Sao_Paulo)<br>
+          ▫️ PostgreSQL: Consulta paginada com LIMIT/OFFSET para escalar com segurança<br>
+          ▫️ IF: Decide entre atualizar ou inserir<br>
+          ▫️ Loop Over Items: Itera por cada cliente<br>
+          ▫️ Error Trigger: Captura falhas e registra no error_log com precisão
+          <br>
+          ✨ Destaques que fazem a diferença:<br>
+          ✔️ Escalabilidade garantida com paginação<br>
+          ✔️ Confiabilidade com tratamento de erros robusto<br>
+          ✔️ Precisão temporal com fuso local sincronizado
+          <br>
+          📊 Resultado?<br>
+          Menos trabalho manual, dados organizados e um processo sólido, pronto para produção — tudo conectado ao banco de dados.
+          <br>
+          Mais um passo firme na jornada de automações com n8n e IA!</p>
+          <!-- Inserindo a imagem -->
+      <img src="img/ImgN8Npg.jpg" alt="Fluxo de Gerenciamento de Mensagens" class="project-image">
+            <!-- Link para o GitHub -->
+      <a href="https://github.com/RoniJunior/Fluxo_automacao_Update_Postgres" class="project-link" target="_blank">"GitHub Code"</a>
+        </div>
+      <div class="project-item">
+        <h4>Projeto 9: 🤖 Automação de Leads para uma Clínica Odontológica no n8n! 🦷📊</h4>
+        <p>Criei um fluxo no n8n para extrair leads do Facebook Ads e organizá-los automaticamente em uma planilha! 📑✨
+          <br>
+          🔹 Como funciona?<br>
+          1️⃣ O webhook captura os leads assim que são gerados no Facebook.<br>
+          2️⃣ Os dados são processados e organizados.<br>
+          3️⃣ O fluxo adiciona informações como data, WhatsApp, e-mail e nome formatado.<br>
+          4️⃣ Tudo é salvo automaticamente em uma planilha para fácil acompanhamento! <br>
+          📌<br>
+          ✅ Benefícios:<br>
+          ✔️ Automação sem complicação<br>
+          ✔️ Agilidade no follow-up dos leads<br>
+          ✔️ Dados sempre organizados e atualizados
+          <br>
+          Isso otimiza muito o tempo da equipe comercial e aumenta as chances de conversão!</p>
+        <!--Inserindo a Imagem-->
+        <img src="img/ImgN8Nfb.jpg" alt="Automação de Leads para uma Clínica Odontológica" class="project-image">
+            <!-- Link para o GitHub -->
+            <a href="https://github.com/RoniJunior/Fluxo_LLeads_FB" class="project-link" target="_blank">"GitHub Code"</a>
+      </div>
+      <div class="project-item">
+        <h4>Projeto 10: 🚀 Automação + IA no Atendimento da Barbearia 💈🤖</h4>
+        <p>🚀 Automação + IA no Atendimento da Barbearia 💈🤖
+          <br>
+          Apresento um dos nossos últimos fluxos criados no n8n, integrando Inteligência Artificial, Intervenção Humana e WhatsApp para otimizar o agendamento e cancelamento de horários em barbearias.
+          <br>
+          👨‍💻 O sistema: <br>
+          ✅ Autentica e normaliza mensagens recebidas<br>
+          ✅ Converte áudios em texto com IA<br>
+          ✅ Gera respostas personalizadas com nosso Agente de IA<br>
+          ✅ Permite intervenção humana quando necessário<br>
+          ✅ Notifica clientes via WhatsApp em tempo real<br>
+          ✅ Captura e trata os agendamentos direto no banco de dados
+          <br>
+          🔧 Fluxo 100% adaptável para outros negócios como clínicas, salões, delivery e mais!
+          <br>
+          💡 Soluções práticas e escaláveis com foco em eficiência, experiência do cliente e automação inteligente.</p>
+          <!-- Inserindo a imagem -->
+      <img src="img/ImgFluxoBarber.png" alt="🚀 Automação + IA no Atendimento da Barbearia 💈🤖" class="project-image">
+            <!-- Link para o GitHub -->
+      <a href="https://github.com/RoniJunior/Fluxo_Agente_Barbearia" class="project-link" target="_blank">"GitHub Code"</a>
+
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+    
     <br>
     <div class="centered-container">
       <!-- Linguagens de Programação -->
@@ -121,11 +204,11 @@
     </div>
     <br>
     <div class="icons-center">
-      <img alt="RoniJunior-node.JS" height="110" width="140" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+      <img alt="RoniJunior-Python" height="130" width="180" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
       <img alt="RoniJunior-JavaScript" height="70" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
       <img alt="RoniJunior-HTML5" height="70" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
       <img alt="RoniJunior-CSS3" height="70" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-      <img alt="RoniJunior-TypeScript" height="70" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+      <img alt="RoniJunior-N8N" height="90" width="180" src="https://upload.wikimedia.org/wikipedia/commons/5/53/N8n-logo-new.svg" />
       <img alt="RoniJunior-PostgreSQL" height="70" width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
       </div>
       <br> 
