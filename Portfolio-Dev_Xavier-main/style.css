@@ -1,0 +1,400 @@
+/* Reset básico e font-family */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #040504, #01f015);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Foto e Cargo  */
+
+.foto {
+  font-family: "Montserrat", sans-serif;
+  display: flex; /* Layout flexível */
+  gap: 2%; /* Espaçamento entre os blocos */
+  max-width: 120%; /* Largura máxima da seção */
+  padding: 1%; /* Adiciona espaçamento interno */
+}
+
+.profile {
+  background: linear-gradient(90deg, #040504, #01f015);
+  padding: 6%;
+  border-radius: 1%;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 9000px; /* Torna a imagem redonda */
+  border: 3px solid #4caf50; /* Adiciona uma borda ao redor da imagem */
+}
+
+h2 {
+  margin-top: 1%;
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+/* texto Dinâmico */
+.dynamic-text-container {
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.dynamic-text {
+  color: #2bff00;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.3em solid white;
+  animation: blink 0.7s steps(2, start) infinite;
+  line-height: 1;
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+  .dynamic-text-container {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .dynamic-text-container {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dynamic-text-container {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-text-container {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilo da seção "Sobre" */
+.Sobre {
+  flex: 2;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.Sobre h2 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.Sobre p {
+  line-height: 2.6;
+  text-align: justify;
+}
+
+/* Currículo */
+.curriculo {
+  font-family: Montserrat, sans-serif;
+  display: inline-block;
+  padding: 0.8% 3.5%;
+  color: #fff;
+  background-color: #0c8839;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 350;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.curriculo:hover {
+  background-color: #1ebe57;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero h2 {
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #ffffff;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem;
+  background: linear-gradient(90deg, #040504, #01f015);
+}
+
+.projects h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.projects-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item {
+  padding: 1rem;
+  border: 1% solid #ddd;
+  border-radius: 1%;
+  background: #080808;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4% 1% rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 2%;
+  border-radius: 3%;
+}
+
+.project-item h4 {
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Centraliza a div no meio da tela */
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2.5vh;
+  text-align: center;
+}
+
+/* Estilo da div que contém as imagens */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 0.5%;
+}
+
+.icons-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  text-align: center;
+}
+
+.icons-center img {
+  margin: 0.5%;
+  width: 50px; /* Ajusta o tamanho das imagens */
+}
+
+/* Redes sociais */
+.redeSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  text-align: center;
+}
+
+.redeSocial img {
+  margin: 10px;
+  width: 70px;
+}
+
+/* Estilo da seção de contato */
+.contact {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #0c8839;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+}
+
+.contact_email {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact .whatsapp-button {
+  text-decoration: none !important;
+}
+
+/* Estilo do botão de e-mail */
+.email-button {
+  display: inline-block;
+  padding: 1% 2%;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000000;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+  .dynamic-text-container {
+    font-size: 2.5rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .foto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .dynamic-text-container {
+    font-size: 2rem;
+  }
+
+  .profile-pic {
+    width: 130px;
+    height: 130px;
+  }
+
+  .foto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .dynamic-text-container {
+    font-size: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .foto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-text-container {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tech-icons img {
+    width: 90px;
+    height: 40px;
+  }
+}
